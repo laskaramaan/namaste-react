@@ -1,42 +1,45 @@
-###Q. What is Library?
+# Igninting our app
+
+
+### Q. What is Library?
 A. Its a piece of code that somebody wrote for us
 Note: React is also a library, This library exports a lot of super powers that we can use
 Simplest way to inject react to your is using CDN links
 
-###Q. Why react was introduced?
+### Q. Why react was introduced?
 A. They wanted to write whole HTML inside JS
 
-Q. Difference between react and reactDOM
+### Q. Difference between react and reactDOM
 A. react is the core package and reactDOM is used for manipulating the DOM
 
 createElement()=>
-    ```
-    React.createElement(
+
+```React.createElement(
   type,
   [props],
   [...children]
 )
 //Create and return a new React element of the given type.
-
 ```
 
-BUNDLERS: vite,webpack,parcel
+**BUNDLERS:** vite,webpack,parcel
 
-[Bundlers minify your code, remove the console logs and a lot of other things to make it optimized and production ready]
+### Q.What does bundlers do?
+A. Bundlers minify your code, remove the console logs and a lot of other things to make it optimized and production ready
 
 Note: create-react-app uses webpack as bundler
 
 But we will use **parcel**
 PARCEL is a package
 
-Now what is a package?
+**Now what is a package?**
     Pacxkage is kind of a module or some piece of code,  when need to use package in the project we would have to use package manager (e.g. npm, yarn)
 
 ```To install npm: npm init -y // init stands for initialize, -y it skips a lot of steps``` 
 After this we would see a new file in the project called "package.json"
 
-Why we need package managers like npm/yarn?
-We want to manage a lot of packages, a react app is a huge app which doesnot run on just react, there are a lot of super powers which we need and those super powers comes from different packages
+### Q.Why we need package managers like npm/yarn?
+A. We want to manage a lot of packages, a react app is a huge app which doesnot run on just react, there are a lot of super powers which we need and those super powers comes from different packages
 
 So now npm is installed in your machine, from now on whenever we need to install any package we will do that using npm
 
@@ -48,21 +51,21 @@ Note: If we dont put -D then it will be available globally
 
 after this a new file would show up caled "package-lock.json" and also node modules folder is added
 
-What's package-lock.json?
+### Q.What's package-lock.json?
     It's a very important file
     Package-lock locks the version of packages so that there is no uncertainity.
     Don't ever put it into gitignore.
     It keeps track of the veriosn and maintains hash of it as well
     This hash ensures that the verios of the package that is running in my system is same in the server as well
 
-What's node module and why its required?
+### Q.What's node module and why its required?
 Whenever you install something(packeges/libraries) it gets installed in the mode modules, so we can say that node modules is kind of a database for the npm
 
 
 
-Difference between ^ and ~ and "none of these two"
+### Q.Difference between ^ and ~ and "none of these two"
 
-Q.Should you add node_modules to gitignore?
+### Q.Should you add node_modules to gitignore?
 Yes, we dont need in the git,bcz the package-lock.json has sufficient information to recreate node modules
 
 
