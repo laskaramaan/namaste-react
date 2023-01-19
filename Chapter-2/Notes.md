@@ -7,7 +7,7 @@ Note: React is also a library, This library exports a lot of super powers that w
 Simplest way to inject react to your is using CDN links
 
 ### Q. Why react was introduced?
-A. They wanted to write whole HTML inside JS
+A. They wanted to write whole HTML inside JS file
 
 ### Q. Difference between react and reactDOM
 A. react is the core package and reactDOM is used for manipulating the DOM
@@ -25,7 +25,8 @@ createElement()=>
 **BUNDLERS:** vite,webpack,parcel
 
 ### Q.What does bundlers do?
-A. Bundlers minify your code, remove the console logs and a lot of other things to make it optimized and production ready
+A. Bundlers minify your code, remove the console logs and a lot of other things to make it optimized and production ready.
+**Remember**: By default parcel does not remove console logs, we have to configure our system.
 
 Note: create-react-app uses webpack as bundler
 
@@ -46,8 +47,10 @@ So now npm is installed in your machine, from now on whenever we need to install
 ```$ npm install -D parcel
 
 -D (devDependeny) means we are installing it in your development enviroment
-Note: If we dont put -D then it will be available globally
+
 ```
+### {Q.read about devDependency and dependency}
+
 
 after this a new file would show up caled "package-lock.json" and also node modules folder is added
 
@@ -108,6 +111,14 @@ Parcel also does caching while development.
 Parcel does compression also.
 Parcel makes the app compatible with older version of  with the help of browserlist.
 parcel uses consistent hashing algorithm to do all the bundling.
+Parcel also does tree shaking.
+
+### Q.What is tree shaking?
+A. Tree shaking means removing unwanted code.
+
+    **What is unwanted code?**
+    A. Suppose your app is importing a library and it a gives to 10-20 helper functions, but suppose we use only 2-3 helper functions.Parcel is very smart it will just ignore the unused code.
+
  
  How does parcel know about the changes in the files?
     There is something called file watcher algorithm which does this job. It is written in C++.
