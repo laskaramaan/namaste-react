@@ -1,0 +1,12 @@
+Q. What is Library?
+A. Its a piece of code that somebody wrote for us
+Note: React is also a library, This library exports a lot of super powers that we can use
+Simplest way to inject react to your is using CDN links
+
+Q. Why react was introduced?
+A. They wanted to write whole HTML inside JS
+
+createElement()=>
+    
+
+
